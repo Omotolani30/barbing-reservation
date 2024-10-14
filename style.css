@@ -304,8 +304,9 @@ button:hover {
 
     .about-container{
         display: flex;
+        padding: 20px;
         flex-direction: column;
-        gap: 2rem;
+        /* gap: 2rem; */
     }
     
     .about-content {
@@ -316,9 +317,13 @@ button:hover {
     }
     
     .about-image img{
-        max-width: 500px;
+        /* max-width: 450px; */
+        display: none;
     }
     
+    .team{
+        padding: 20px;
+    }
     .contact-form {
         box-shadow: none;
     }
