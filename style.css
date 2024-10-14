@@ -139,7 +139,6 @@ p {
 
 .about-container{
     display: flex;
-    /* gap: 30px; */
     justify-content: space-around;
     align-items: center;
 }
@@ -148,7 +147,9 @@ p {
     max-width: 500px;
     margin-right: 40px;
 }
-
+.about-content p{
+    text-align: justify;
+}
 .about-image img{
     max-width: 500px;
     border-radius: 10px;
