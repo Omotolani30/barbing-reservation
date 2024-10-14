@@ -6,14 +6,3 @@ const navLinks = document.getElementById('nav-links');
 toggleButton.addEventListener('click', () => {
     navLinks.classList.toggle('active');
 });
-
-
-// const marquee = document.getElementById('marquee');
-
-//     marquee.addEventListener('mouseover', () => {
-//         marquee.querySelector('.marquee').style.animationPlayState = 'paused'; // Pause animation
-//     });
-
-//     marquee.addEventListener('mouseout', () => {
-//         marquee.querySelector('.marquee').style.animationPlayState = 'running'; // Resume animation
-//     });
