@@ -268,9 +268,8 @@ button:hover {
 }
 
 
-
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
     .nav-links {
         position: absolute;
         top: 60px;
@@ -279,52 +278,44 @@ button:hover {
         background-color: #1e1e1e;
         box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.8);
         flex-direction: column;
-        align-items: center;
+        align-items: flex-start;
         display: none;
     }
-
     .nav-links.active{
         display: flex;
     }
-
     .nav-links li {
         padding: 15px 0;
     }
-
     .toggle {
         display: flex;
     }
 
+    .hero h1{
+        font-size: 2.5rem;
+    }
     h2 {
         font-size: 2rem; 
     }
     
     p {
-        font-size: 1rem;
+        font-size: 1.2rem;
     }
 
     .about-container{
         display: flex;
-        padding: 20px;
         flex-direction: column;
-        /* gap: 2rem; */
+        /* padding: 20px; */
+        gap: 2rem;
     }
-    
     .about-content {
         margin-right: 5px;
+        /* max-width: 600px; */
     }
-    .about-content p {
-        text-align: justify;
-    }
-    
     .about-image img{
-        /* max-width: 450px; */
-        display: none;
+        max-width: 500px;
     }
     
-    .team{
-        padding: 20px;
-    }
     .contact-form {
         box-shadow: none;
     }
@@ -337,64 +328,28 @@ button:hover {
 }
 
 
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) and (max-width: 992px) {
-    .nav-links {
-        position: absolute;
-        top: 60px;
-        right: 0;
-        width: 25%;
-        background-color: #1e1e1e;
-        flex-direction: column;
-        align-items: flex-start;
-        display: none;
+/* Extra small devices (phones) */
+@media only screen and (max-width: 480px) {
+   .hero h1{
+        font-size: 2rem;
     }
-
-    .nav-links.active{
-        display: flex;
-    }
-
-    .nav-links li {
-        padding: 15px 0;
-    }
-
-    .toggle {
-        display: flex;
-    }
-
     h2 {
-        font-size: 2.5rem; 
+        font-size: 1.5rem; 
     }
     
     p {
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
 
-    .about-container{
-        display: flex;
-        flex-direction: column;
-        gap: 2rem;
+    .about{
+        padding: 40px 20px 0px;
     }
-    
-    .about-content {
-        margin-right: 5px;
-        max-width: 600px;
-    }
-    .about-content p {
-        text-align: justify;
-    }
-    
     .about-image img{
-        max-width: 600px;
+        display: none;
+        /* max-width: 300px; */
     }
     
-    /* .contact-form {
-        box-shadow: none;
+    .team{
+        padding: 20px;
     }
-    .contact-form input{
-        box-shadow: none;
-    }
-    button {
-        box-shadow: none;
-    } */
 }
