@@ -3,36 +3,39 @@
     color: white;
     padding: 50px 0;
     background-color: #1e1e1e;
-    background: url(assets/latino-hair-salon-owner-taking-care-client\ \(1\).jpg) no-repeat center center/cover;
+    background: url('assets/latino-hair-salon-owner-taking-care-client.jpg') no-repeat center center;
+    background-size: cover;
+    background-position: top center;
     position: relative;
     height: 100vh;
     overflow: hidden;
-}
-
-.services-header::after{
-    content: "";
-    position: absolute;
-    background-color: rgba(0, 0, 0, 0.5);
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
     z-index: 1;
 }
 
+
+#services-header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); 
+    z-index: -1;
+}
+
 #services-header h1 {
-    font-size: 2.5em;
+    font-size: 2.5rem;
 }
 
 #services-header p {
-    font-size: 1.2em;
+    font-size: 1.2rem;
     margin-top: 10px;
-    /* color: #ccc; */
 }
 
 #services-list .container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 20px;
     padding: 20px;
     position: relative;
@@ -57,11 +60,11 @@
 
 .service-card h2 {
     margin-top: 10px;
-    font-size: 1.5em;
+    font-size: 1.5rem;
 }
 
 .service-card p {
-    font-size: 1em;
+    font-size: 1rem;
     margin: 10px 0;
     color: #ccc;
 }
@@ -99,11 +102,16 @@
 
 @media(max-width:768px){
     #services-header{
-        height: 60vh;
+        height: 50vh;
     }
-}
-@media(max-width:480px){
+    #services-header h1 {
+        font-size: 2rem;
+    }
+    #services-header p {
+        font-size: 1rem;
+    }
+/* @media(max-width:480px){
     #services-header{
         height: 50vh;
     }
-}
+} */
