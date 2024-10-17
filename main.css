@@ -119,11 +119,11 @@ body {
 }
 
 h2{
-    font-size: 2.5rem;
+    font-size: 2rem;
     margin-bottom: 20px;
 }  
 p {
-    font-size: 1.2rem;
+    font-size: 1rem;
     margin-bottom: 40px;
 }
     
@@ -151,7 +151,7 @@ p {
     text-align: justify;
 }
 .about-image img{
-    max-width: 500px;
+    max-width: 400px;
     border-radius: 10px;
 }
 
@@ -331,7 +331,8 @@ button:hover {
 /* Extra small devices (phones) */
 @media only screen and (max-width: 480px) {
    .hero h1{
-        font-size: 2rem;
+        font-size: 1.9rem;
+        margin-right: 5px;
     }
     h2 {
         font-size: 1.5rem; 

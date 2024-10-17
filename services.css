@@ -9,6 +9,9 @@
     position: relative;
     height: 100vh;
     overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     z-index: 1;
 }
 
@@ -110,6 +113,9 @@
     #services-header p {
         font-size: 1rem;
     }
+}
+
+
 /* @media(max-width:480px){
     #services-header{
         height: 50vh;
