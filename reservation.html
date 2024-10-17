@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="reservation.css">
+</head>
+<body>
+    
+      <!-- navigation bar -->
+      <nav class="navbar">
+        <div class="logo">JAKOM</div>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="index.html#home" target="_blank">Home</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="services.html">Our Services</a></li>
+            <li><a href="members.html">Team Members</a></li>
+            <li><a href="reservation.html">Reservation</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+        <div class="toggle" id="toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <section id="reservation-header">
+        <div class="container">
+            <h1>Book Your Appointment</h1>
+            <p>Schedule your grooming appointment with our professional barbers at your convenience.</p>
+        </div>
+    </section>
+    
+
+    <section id="reservation-form">
+        <div class="container">
+            <form action="#" method="post">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" placeholder="Your name" required>
+    
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="Your email" required>
+    
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="Your phone number" required>
+    
+                <label for="barber">Select Your Barber</label>
+                <select id="barber" name="barber" required>
+                    <option value="Tolani">Tolani</option>
+                    <option value="Jojo">Joel</option>
+                    <option value="Tolani">Tolani</option>
+                    <option value="Jojo">Joel</option>
+                    <option value="Tolani">Tolani</option>
+                    <option value="Jojo">Joel</option>
+                </select>
+    
+                <label for="service">Select a Service</label>
+                <select id="service" name="service" required>
+                    <option value="haircut">Haircut</option>
+                    <option value="beard_grooming">Beard Grooming</option>
+                    <option value="fade_and_taper_cut">Fade and Taper Cut</option>
+                    <option value="eyebrow_shaping">Eyebrow Shaping</option>
+                    <option value="cornrows">Cornrows</option>
+                    <option value="kids_haircut">Kids Haircut</option>
+                    <option value="hair_coloring">Hair Coloring</option>
+                    <option value="scalp_treatment">Scalp Treatment</option>
+                </select>
+    
+                <label for="date">Preferred Date</label>
+                <input type="date" id="date" name="date" required>
+    
+                <label for="time">Preferred Time</label>
+                <input type="time" id="time" name="time" required>
+    
+                <label for="notes">Additional Notes (Optional)</label>
+                <textarea id="notes" name="notes" placeholder="Any special requests?" rows="4"></textarea>
+    
+                <input class="reservation-btn" type="submit" value="Book Appointment">
+            </form>
+        </div>
+    </section>
+    
+
+
+    <script src="main.js"></script>
+</body>
+</html>

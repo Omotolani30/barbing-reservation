@@ -4,9 +4,95 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="members.css">
+
+    <style>
+        @font-face {
+            font-family: "Pacifico";
+            src: url("assets/Pacifico/Pacifico-Regular.ttf") format("truetype");
+            font-family: "Poppins";
+            src: url("assets/Poppins/Poppins-Regular.ttf") format("truetype");
+        }
+    </style>
 </head>
 <body>
+
+    <!-- navigation bar -->
+    <nav class="navbar">
+        <div class="logo">JAKOM</div>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="index.html#home" target="_blank">Home</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="services.html">Our Services</a></li>
+            <li><a href="members.html">Team Members</a></li>
+            <li><a href="reservation.html">Reservation</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+        <div class="toggle" id="toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <section id="team-header">
+        <div class="container">
+            <h1>Meet Our Team</h1>
+            <p>Our professional barbers are here to give you the best grooming experience.</p>
+        </div>
+    </section>
     
+
+
+    <section id="team-list">
+        <div class="container">
+            <div class="team-card" onclick="openModal('team1')">
+                <img src="assets/Tolani 01.jpg" alt="Barber Image">
+                <div class="team-info">
+                    <h2>John Doe</h2>
+                    <p>Expert in fades & grooming</p>
+                </div>
+            </div>
+    
+            <div class="team-card" onclick="openModal('team2')">
+                <img src="assets/DSC_6867.JPG" alt="Barber Image">
+                <div class="team-info">
+                    <h2>Jane Smith</h2>
+                    <p>Specialist in braids & styles</p>
+                </div>
+            </div>
+    
+            <!-- Repeat for more team members -->
+        </div>
+    </section>
+        
+
+
+    <!-- Modal for Team Member 1 -->
+<div id="team1" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('team1')">&times;</span>
+        <h2>John Doe</h2>
+        <img src="assets/Tolani 01.jpg" alt="Barber Image">
+        <p><strong>Experience:</strong> 5 years of professional grooming.</p>
+        <p><strong>Speciality:</strong> Expert in fades, clean cuts, and beard grooming.</p>
+        <p><strong>Bio:</strong> John is a highly skilled barber with a passion for modern styles and classic grooming techniques. He has served over 500 clients with satisfaction.</p>
+    </div>
+</div>
+
+<!-- Modal for Team Member 2 -->
+<div id="team2" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('team2')">&times;</span>
+        <h2>Jane Smith</h2>
+        <img src="assets/DSC_6867.JPG" alt="Barber Image">
+        <p><strong>Experience:</strong> 7 years specializing in braids and unique styles.</p>
+        <p><strong>Speciality:</strong> Jane is known for her intricate braid work and creative styling, making her a favorite for those looking for standout styles.</p>
+        <p><strong>Bio:</strong> With an eye for detail and innovation, Jane brings her extensive experience in diverse hair textures and styles to the table.</p>
+    </div>
+</div>
+
+<script src="main.js"></script>
 </body>
 </html>

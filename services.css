@@ -3,8 +3,7 @@
     color: white;
     padding: 50px 0;
     background-color: #1e1e1e;
-    background: url('assets/latino-hair-salon-owner-taking-care-client.jpg') no-repeat center center;
-    background-size: cover;
+    background: url('assets/latino-hair-salon-owner-taking-care-client.jpg') no-repeat center center/cover;
     background-position: top center;
     position: relative;
     height: 100vh;
