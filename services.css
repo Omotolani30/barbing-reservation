@@ -37,7 +37,8 @@
 
 #services-list .container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    /* grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); */
+    grid-template-columns: repeat(4, 1fr);
     gap: 20px;
     padding: 20px;
     position: relative;
@@ -102,20 +103,34 @@
 }
 
 
-@media only screen and (max-width: 1200px){
+@media (min-width: 1024px) and (max-width: 1440px){
     #services-list .container {
-        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
     }
-    
-    .service-card img {
-        height: 250px;
-    }
+    /* .service-card{
+        height: 400px;
+    } */
+    /* .service-card img {
+        height: 150px;
+    } */
 }
 @media only screen and (max-width: 768px){
+
     #services-header h1 {
         font-size: 2rem;
     }
     #services-header p {
         font-size: 1rem;
+    }
+    #services-list .container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    #services-list .container {
+        grid-template-columns: 1fr;
     }
 }
