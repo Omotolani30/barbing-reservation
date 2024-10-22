@@ -18,6 +18,24 @@ function closeModal(id) {
     document.getElementById(id).style.display = "none";
 }
 
+// document.querySelectorAll('.team-member').forEach(member => {
+//     member.addEventListener('click', function() {
+//         const memberId = this.dataset.id;
+//         // Fetch data from backend (this part interacts with backend)
+//         fetch(`/team-member/${memberId}`)
+//             .then(response => response.json())
+//             .then(data => {
+//                 // Populate popup with team member info
+//                 document.getElementById('popup-name').innerText = data.name;
+//                 document.getElementById('popup-role').innerText = data.role;
+//                 document.getElementById('popup-bio').innerText = data.bio;
+//                 // Display popup
+//                 document.getElementById('team-popup').style.display = 'block';
+//             });
+//     });
+// });
+
+
 
 // Example of dynamic availability based on barber selection
 document.getElementById('barber').addEventListener('change', function() {
