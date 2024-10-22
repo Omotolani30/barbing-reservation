@@ -117,7 +117,6 @@
     } */
 }
 @media only screen and (max-width: 768px){
-
     #services-header h1 {
         font-size: 2rem;
     }
@@ -127,10 +126,16 @@
     #services-list .container{
         grid-template-columns: repeat(2, 1fr);
     }
+     .service-card img {
+        height: 150px;
+    }
 }
 
 @media (max-width: 480px) {
     #services-list .container {
         grid-template-columns: 1fr;
+    }
+    .service-card img {
+        height: 200px;
     }
 }
