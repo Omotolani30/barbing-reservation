@@ -120,16 +120,16 @@
     #services-list .container{
         grid-template-columns: repeat(2, 1fr);
     }
-     .service-card img {
+     /* .service-card img {
         height: 150px;
-    }
+    } */
 }
 
 @media (max-width: 480px) {
     #services-list .container {
         grid-template-columns: 1fr;
     }
-    .service-card img {
-        height: 100px;
-    }
+    /* .service-card img {
+        height: 10px;
+    } */
 }
