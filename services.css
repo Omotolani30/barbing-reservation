@@ -102,7 +102,10 @@
 }
 
 
-@media only screen and (max-width: 1440px){
+@media only screen and (max-width: 1200px){
+    body{
+        background-color: green;
+    }
     #services-list .container {
         grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     }
@@ -112,6 +115,9 @@
     }
 }
 @media only screen and (max-width: 768px){
+    body{
+        background-color: red;
+    }
     #services-header h1 {
         font-size: 2rem;
     }
