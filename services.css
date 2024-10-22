@@ -103,9 +103,6 @@
 
 
 @media(max-width:768px){
-    #services-header{
-        height: 50vh;
-    }
     #services-header h1 {
         font-size: 2rem;
     }
@@ -113,10 +110,3 @@
         font-size: 1rem;
     }
 }
-
-
-/* @media(max-width:480px){
-    #services-header{
-        height: 50vh;
-    }
-} */
