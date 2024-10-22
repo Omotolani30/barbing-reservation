@@ -109,12 +109,6 @@
         grid-template-columns: repeat(4, 1fr);
         gap: 20px;
     }
-    /* .service-card{
-        height: 400px;
-    } */
-    /* .service-card img {
-        height: 150px;
-    } */
 }
 @media only screen and (max-width: 768px){
     #services-header h1 {
