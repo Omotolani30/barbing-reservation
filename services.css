@@ -102,7 +102,16 @@
 }
 
 
-@media(max-width:768px){
+@media only screen and (max-width: 1440px){
+    #services-list .container {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }
+    
+    .service-card img {
+        height: 250px;
+    }
+}
+@media only screen and (max-width: 768px){
     #services-header h1 {
         font-size: 2rem;
     }
