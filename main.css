@@ -62,7 +62,6 @@ body {
     width: 25px;
     background: #ffffff;
     border-radius: 5px;
-    /* margin: 4px; */
 }
 
 /* hero section */
@@ -246,7 +245,7 @@ p {
     border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 1rem;
-    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.5)
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
 
 button {
@@ -305,12 +304,10 @@ button:hover {
     .about-container{
         display: flex;
         flex-direction: column;
-        /* padding: 20px; */
         gap: 2rem;
     }
     .about-content {
         margin-right: 5px;
-        /* max-width: 600px; */
     }
     .about-image img{
         max-width: 500px;
@@ -347,7 +344,6 @@ button:hover {
     }
     .about-image img{
         display: none;
-        /* max-width: 300px; */
     }
     
     .team{

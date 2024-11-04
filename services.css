@@ -37,7 +37,6 @@
 
 #services-list .container {
     display: grid;
-    /* grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); */
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
     padding: 20px;
@@ -120,16 +119,10 @@
     #services-list .container{
         grid-template-columns: repeat(2, 1fr);
     }
-     /* .service-card img {
-        height: 150px;
-    } */
 }
 
 @media (max-width: 480px) {
     #services-list .container {
         grid-template-columns: 1fr;
     }
-    /* .service-card img {
-        height: 10px;
-    } */
 }
