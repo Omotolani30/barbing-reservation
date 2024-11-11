@@ -1,4 +1,5 @@
 // toggle
+
 const toggleButton = document.getElementById('toggle');
 const navLinks = document.getElementById('nav-links');
 
@@ -8,6 +9,7 @@ toggleButton.addEventListener('click', () => {
 
 
 // members
+
 // Function to open modal
 function openModal(id) {
     document.getElementById(id).style.display = "flex";
@@ -22,3 +24,5 @@ function closeModal(id) {
 document.getElementById('barber').addEventListener('change', function() {
     var selectedBarber = this.value;
 });
+
+  
