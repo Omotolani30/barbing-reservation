@@ -7,7 +7,11 @@
 }
 
 body {
+<<<<<<< HEAD
     font-family: "Poppins", sans-serif;
+=======
+    font-family: "Poppins", san-serif;
+>>>>>>> cd5af084d491ca99ff070bb2e9333c386c0697a2
     background-color: #1e1e1e;
     color: #ffffff;
 }
