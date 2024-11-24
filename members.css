@@ -3,19 +3,37 @@
     color: white;
     padding: 50px 0;
     background-color: #1a1a1a;
+    background: url('assets/teamMembers.jpeg') no-repeat center center/cover;
+    background-position: center;
+    height: 80vh;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
 }
-
+#team-header::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+    height: 100%;
+}
 #team-header h1 {
     font-size: 2.5em;
 }
 
 #team-header p {
-    font-size: 1.2em;
+    font-size: 1.5em;
     margin-top: 10px;
     color: #ccc;
 }
 
-#team-list .container {
+#team-list .container2 {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     gap: 20px;
